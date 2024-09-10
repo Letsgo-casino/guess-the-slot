@@ -5,55 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Slot - Weekly Promo Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet" type="text/css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #e03a60;
+            padding: 0;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+            background-color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
         }
-        img {
-            max-width: 90%;
-            max-height: 80vh;
-            border: 5px solid #e03a60;
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            color: #000;
+        }
+        .image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #82c91e;
             border-radius: 10px;
-            margin-bottom: 10px; /* Space between image and text */
+        }
+        .tip {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            padding: 10px 20px;
         }
         .cta-button {
-            background-color: #FFFF00;
+            background-color: #e03a60;
             border-radius: 18px;
-            color: #000000;
+            color: #000;
             display: inline-block;
-            font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
             padding: 13px 60px;
             text-align: center;
             text-decoration: none;
+            margin: 10px auto;
             width: auto;
             word-break: keep-all;
             border: none;
-            margin-top: 10px; /* Space between text and button */
         }
         .cta-button:hover {
-            background-color: #FFFF00; /* Slightly darker on hover */
+            background-color: #c03254; /* Slightly darker on hover */
         }
-        .tip {
-            font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 10px; /* Space between tip and button */
+        .heading {
             text-align: center;
-            padding: 0 20px;
+            font-size: 23px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .info {
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        @media (max-width: 520px) {
+            .container {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="https://userimg-assets-eu.customeriomail.com/images/client-env-128238/1724915151846_Roll_the_Pearls_900x600_azino-removebg-preview_01J6EF8ZKNYRKQ6Z77CE0NJQQ8.png" alt="Guess the Slot Promo">
-    <p class="tip"><strong>Here's a little tip from us: _ _ L _ O F _ _ N _ _<br>It should be written as 1 word.</strong></p>
-    <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_blank" class="cta-button">MAKE A GUESS</a>
+    <div class="container">
+        <h1 class="heading">GUESS THE SLOT</h1>
+        <img src="https://userimg-assets-eu.customeriomail.com/images/client-env-128238/1724915151846_Roll_the_Pearls_900x600_azino-removebg-preview_01J6EF8ZKNYRKQ6Z77CE0NJQQ8.png" alt="Guess the Slot Promo" class="image">
+        <p class="tip"><strong>Here's a little tip from us: _ _ L _ O F _ _ N _ _<br>It should be written as 1 word.</strong></p>
+        <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_self" class="cta-button">MAKE A GUESS</a>
+        <div class="info">
+            <p>1. Guess the name of the game from the character below.</p>
+            <p>2. Go to <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_blank" style="text-decoration: underline; color: #e03a60;" rel="noopener">promo page</a>.</p>
+            <p>3. Enter the NAME OF THE GAME in the promo code section.</p>
+            <p>4. If correct, <strong>WIN 10 Free Spins!</strong></p>
+        </div>
+    </div>
 </body>
 </html>
