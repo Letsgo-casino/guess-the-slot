@@ -29,7 +29,7 @@
         }
         .image {
             width: 100%;
-            max-width: 90%;
+            max-width: 80%; /* Slightly smaller image */
             height: auto;
             display: block;
             margin: 0 auto;
@@ -43,16 +43,17 @@
             padding: 10px 20px;
         }
         .cta-button {
-            background-color: #ffff00; /* Same as background color */
+            background-color: #ffff00;
             border-radius: 18px;
-            color: #000000; /* Yellow text */
+            color: #000000;
             display: inline-block;
-            font-size: 15px;
+            font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
+            font-size: 14px;
             font-weight: 700;
             padding: 13px 60px;
             text-align: center;
             text-decoration: none;
-            margin: 20px auto; /* Space around the button */
+            margin: 20px auto;
             width: auto;
             word-break: keep-all;
             border: none;
@@ -66,6 +67,15 @@
             font-weight: 700;
             margin: 10px 0;
         }
+        .info {
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .promo-link {
+            color: #000000; /* Updated text color */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +86,7 @@
         <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_self" class="cta-button">MAKE A GUESS</a>
         <div class="info">
             <p>1. Guess the name of the game from the character above</p>
-            <p>2. Go to <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_blank" style="text-decoration: underline; color: #e03a60;" rel="noopener">promo page</a>.</p>
+            <p>2. Go to <a href="https://www.letsgocasino.com/profile/promo/casino?target=_self" target="_blank" class="promo-link" rel="noopener">promo page</a>.</p>
             <p>3. Enter the NAME OF THE GAME in the promo code section.</p>
             <p>4. If correct, <strong>WIN 10 Free Spins!</strong></p>
         </div>
